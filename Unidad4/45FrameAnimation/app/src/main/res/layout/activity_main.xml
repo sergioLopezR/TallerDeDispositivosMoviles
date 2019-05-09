@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:weightSum="1"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:layout_weight="0.18"
+        android:id="@+id/imageView"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#AE2F8BA0">
+
+        <Button
+            android:id="@+id/btn_start"
+            android:layout_width="120dp"
+            android:layout_height="60dp"
+            android:onClick="onStartBtnClick"
+            android:text="Animar"
+            android:layout_marginLeft="80dp"
+            android:layout_marginTop="20dp" />
+
+        <Button
+            android:id="@+id/btn_stop"
+            android:layout_width="120dp"
+            android:layout_height="60dp"
+            android:onClick="onStopBtnClick"
+            android:text="Detener"
+            android:layout_marginTop="20dp"/>
+
+    </LinearLayout>
+
+
+</LinearLayout>

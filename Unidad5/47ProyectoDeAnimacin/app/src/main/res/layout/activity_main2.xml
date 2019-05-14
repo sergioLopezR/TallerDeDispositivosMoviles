@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Main2Activity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#AE3C5075"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Juego de la botella"
+            android:textSize="30dp"
+            android:layout_marginLeft="70dp"
+            android:layout_marginTop="100dp"
+            android:textColor="#FFFFFF"
+            android:textStyle="bold"/>
+
+        <ImageView
+            android:layout_width="350dp"
+            android:layout_height="300dp"
+            android:id="@+id/imageView"
+            android:layout_marginTop="30dp"
+            android:layout_marginLeft="30dp"/>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_gravity="center">
+
+            <Button
+                android:id="@+id/btn_start"
+                android:layout_width="120dp"
+                android:layout_height="60dp"
+                android:onClick="onStartBtnClick"
+                android:text="Iniciar"
+                android:layout_marginTop="20dp"
+                android:layout_marginRight="20dp"/>
+
+            <Button
+                android:id="@+id/btn_stop"
+                android:layout_width="120dp"
+                android:layout_height="60dp"
+                android:onClick="onStopBtnClick"
+                android:text="Detener"
+                android:layout_marginTop="20dp"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+</LinearLayout>
